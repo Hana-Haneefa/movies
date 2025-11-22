@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="flex items-center gap-10 p-4">
+      <div class="logo w-30"><img src="./assets/img/logo.png" alt="" /></div>
+      <ul class="flex space-x-4 p-4">
+        <li>
+          <a
+            href="#"
+            class="hover:text-blue-500 transition ease-in-out duration-300"
+            >Popular</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="hover:text-blue-500 transition ease-in-out duration-300"
+            >Now playing</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="hover:text-blue-500 transition ease-in-out duration-300"
+            >Upcomming</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="hover:text-blue-500 transition ease-in-out duration-300"
+            >Top rated</a
+          >
+        </li>
+      </ul>
+
+      <div class="search-bar flex-1 ml-auto">
+        <input
+          type="text"
+          placeholder="Search"
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+    </nav>
+
+    <div>
+      <!-- main content -->
+      <div class="p-4 h-80 relative rounded-md overflow-hidden">
+        <img
+          src="./assets/img/bg.jpg"
+          alt="Main Background"
+          class="w-full h-full object-cover rounded-md"
+        />
+      </div>
+
+      <div class="flex flex-col text-right absolute top-38 right-20 text-white">
+        <h1 class="text-6xl font-bold mb-4">Welcome</h1>
+        <p class="text-3xl mb-4">to millions of Movies</p>
+        <p>
+          Discover your next favorite film from thousands of movies, TV
+          shows,<br />
+          and exclusive content. Stream, rate, and share with friends all in one
+          place.
+        </p>
+      </div>
+    </div>
+
+    <!-- movie cards -->
+    <div class="container">
+      <a href=""
+        ><div class="card1"><img src="" alt="" /></div
+      ></a>
+      <a href=""
+        ><div class="card2"><img src="" alt="" /></div
+      ></a>
+      <a href=""
+        ><div class="card3"><img src="" alt="" /></div
+      ></a>
+      <a href=""
+        ><div class="card4"><img src="" alt="" /></div
+      ></a>
+      <a href=""
+        ><div class="card5"><img src="" alt="" /></div
+      ></a>
+    </div>
+  </body>
+</html>
