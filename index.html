@@ -1,171 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- daisyUI theme -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-      @keyframes floatUpDown {
-        0% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-12px);
-        }
-        100% {
-          transform: translateY(0);
-        }
-      }
+    <!-- style file -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
 
-      .float {
-        animation-name: floatUpDown;
-        animation-duration: 3s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        will-change: transform;
-      }
-
-      /* small responsive tweak so the animation is subtle on small screens */
-      @media (max-width: 640px) {
-        .float {
-          animation-duration: 4s;
-        }
-      }
-    </style>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <!-- navigation -->
-    <nav class="flex items-center gap-10 p-4">
-      <div class="logo w-30"><img src="./assets/img/logo.png" alt="" /></div>
-      <ul class="flex space-x-4 p-4">
-        <li>
-          <a
-            href="#"
-            class="hover:text-blue-500 transition ease-in-out duration-300"
-            >Popular</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="hover:text-blue-500 transition ease-in-out duration-300"
-            >Now playing</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="hover:text-blue-500 transition ease-in-out duration-300"
-            >Upcomming</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="hover:text-blue-500 transition ease-in-out duration-300"
-            >Top rated</a
-          >
-        </li>
-      </ul>
-
-      <div class="search-bar flex-1 ml-auto">
-        <input
-          type="text"
-          placeholder="Search"
-          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-      </div>
-    </nav>
-
-    <div>
-      <!-- main content -->
-      <div class="p-4 h-80 relative rounded-md overflow-hidden">
-        <img
-          src="./assets/img/bg.jpg"
-          alt="Main Background"
-          class="w-full h-full object-cover rounded-md"
-        />
-      </div>
-
-      <div class="flex flex-col text-right absolute top-38 right-20 text-white">
-        <h1 class="text-6xl font-bold mb-4">Welcome</h1>
-        <p class="text-3xl mb-4">to millions of Movies</p>
-        <p>
-          Discover your next favorite film from thousands of movies, TV
-          shows,<br />
-          and exclusive content. Stream, rate, and share with friends all in one
-          place.
-        </p>
-      </div>
-    </div>
-
-    <!-- movie cards -->
-    <h1 class="font-bold text-2xl ml-3">Trending</h1>
-    <div class="flex flex-col">
-      <div class="p-4 grid grid-cols-5 gap-4">
-        <a href="wicked movie">
-          <div
-            class="card1 border-2 h-110 rounded-xl overflow-hidden float"
-            style="animation-delay: 0.45s"
-          >
-            <img
-              src="./assets/img/movie1.jpeg"
-              alt=""
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="card2 border-2 h-100 rounded-xl overflow-hidden float"
-            style="animation-delay: 0s"
-          >
-            <img
-              src="./assets/img/movie2.jpeg"
-              alt=""
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="card3 border-2 h-90 rounded-xl overflow-hidden float"
-            style="animation-delay: 0.15s"
-          >
-            <img
-              src="./assets/img/movie3.jpeg"
-              alt=""
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="card4 border-2 h-100 rounded-xl overflow-hidden float"
-            style="animation-delay: 0.3s"
-          >
-            <img
-              src="./assets/img/movie4.jpeg"
-              alt=""
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="card5 border-2 h-110 rounded-xl overflow-hidden float"
-            style="animation-delay: 0.6s"
-          >
-            <img
-              src="./assets/img/movie5.jpeg"
-              alt=""
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </a>
-      </div>
-    </div>
-  </body>
+  <body></body>
 </html>
